@@ -13,7 +13,7 @@
 ```
  cd qmk_firmware
 
- git clone https://github.com/jing2uo/lily58-2040-fw.git keymaps/lily58_2040
+ git clone https://github.com/jing2uo/lily58-2040-fw.git keyboards/lily58_2040
 
  qmk compile -kb lily58_2040 -km default -bl uf2-split-left
  qmk compile -kb lily58_2040 -km default -bl uf2-split-right
