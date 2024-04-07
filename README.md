@@ -8,7 +8,19 @@
 - 支持 Vial，QMK 功能丰富，可以自己修改代码开启更多
 - 兼容 [Lily58](https://github.com/kata0510/Lily58) 和 [Lily58-RE](https://github.com/kissetfall/Lily58-Pro-RE)
 
-## 使用
+## 使用 (QMK)
+
+```
+ cd qmk_firmware
+
+ git clone https://github.com/jing2uo/lily58-2040-fw.git keyboards/lily58_2040
+
+ qmk compile -kb lily58_2040 -km default -bl uf2-split-left
+ qmk compile -kb lily58_2040 -km default -bl uf2-split-right
+
+```
+
+## 使用 (Vial)
 
 ```
  cd vial-qmk/keyboards/
@@ -19,7 +31,7 @@
  make lily58_2040/rp:vial:uf2-split-right  # 编译右手
 ```
 
-## 2040 GPIO
+## RP2040 GPIO
 
 ![](README.assets/2040-gpio.jpg)
 
